@@ -17,6 +17,15 @@ class MyUserEntity {
                       this.hasActiveCart = false,
                     });
 
+// eeeeeeeeeeee
+  /// Converts this [MyUserEntity] to a Firestore document.
+  ///
+  /// Only the following fields are included in the document:
+  ///
+  /// - [userId]
+  /// - [email]
+  /// - [name]
+  /// - [hasActiveCart]
       Map<String, Object> toDocument() {
         return {
           'userId': userId,
